@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/sng23/miniproject2.svg?branch=dev)](https://travis-ci.com/sng23/miniproject2)
+
 # miniproject2
 
 ## Project Task List
