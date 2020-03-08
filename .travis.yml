@@ -11,3 +11,6 @@ branches:
   only:
     - master
     - dev
+    - stats
+    - rng
+    - sampling
