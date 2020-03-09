@@ -2,7 +2,7 @@ from Calculator.Addition import fn_addition
 from Calculator.Division import fn_division
 
 
-def mean(data):
+def Mean(data):
     values = len(data)
     total = 0
     for num in data:

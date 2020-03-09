@@ -1,12 +1,14 @@
 from Calculator.Calculator import Calculator
-from CsvReader import CsvReader
+
+from Statistics.Mean import Mean
+from pprint import pprint
 
 
 class Statistics(Calculator):
-    data = []
 
-    def __int__(self, filepath):
-        self.data = CsvReader(filepath)
-        super().__init__()
+    def mean(self, data):
+        self.result = Mean.mean(data)
+        return self.result
+
 
 

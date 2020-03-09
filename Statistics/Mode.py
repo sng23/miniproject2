@@ -1,6 +1,6 @@
-from statistics import mode
+#from statistics import mode
 
 
-def middle(data):
-    data = []
-    return mode(data)
+#def middle(data):
+ #   data = []
+  #  return mode(data)
