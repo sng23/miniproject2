@@ -1,7 +1,4 @@
-from math import pow
 
 
-def square(a):
-
-    return pow(float(a), 2)
-
+def fn_square(a):
+    return float(a) * float(a)
