@@ -44,6 +44,10 @@ We need to divide the tasks among the team members in a way that will minimize h
 * 3/2/20 SG Rough outline for README.md
 * 3/8/20 SG Added more to README.md
 * 3/8/20 SG Branch calculator off dev, upload calculator project
+* 3/9/20 JF assigned Stats to JF
+* 3/9/20 JF Moved Calculator.py to its own Calculator directory
+* 3/9/20 JF added. static methods for Addition, Subtraction, Division, Sqrt, multiplication, and square to it's own .py
+
 
  
  
