@@ -9,7 +9,7 @@ Outline / Dependency graph | SG | |
 Modules, Plan, Branching, Final PR | SG | |
 Stats | | | | [![Build Status](https://travis-ci.com/sng23/miniproject2.svg?branch=stats)](https://travis-ci.com/sng23/miniproject2)
 RNG | | | | [![Build Status](https://travis-ci.com/sng23/miniproject2.svg?branch=rng)](https://travis-ci.com/sng23/miniproject2)
-Sampling | | | | [![Build Status](https://travis-ci.com/sng23/miniproject2.svg?branch=sampling)](https://travis-ci.com/sng23/miniproject2)
+Sampling | SG | | | [![Build Status](https://travis-ci.com/sng23/miniproject2.svg?branch=sampling)](https://travis-ci.com/sng23/miniproject2)
 
 
 ## Program modules
@@ -43,7 +43,5 @@ We need to divide the tasks among the team members in a way that will minimize h
 ## Changelog
 * 3/2/20 SG Rough outline for README.md
 * 3/8/20 SG Added more to README.md
-* 3/8/20 SG Branch calculator off dev, upload calculator project
-
- 
- 
+* 3/8/20 SG Upload calculator code, set up travis, spin up feature branches
+* 3/9/20 SG Signed up for the sampling feature
