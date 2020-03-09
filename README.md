@@ -7,7 +7,7 @@ Task Todo | In Progress | Review | Done | Build Status
 --- | --- | --- | --- | ---
 Outline / Dependency graph | SG | |
 Modules, Plan, Branching, Final PR | SG | |
-Stats | | | | [![Build Status](https://travis-ci.com/sng23/miniproject2.svg?branch=stats)](https://travis-ci.com/sng23/miniproject2)
+Stats |JF | | | [![Build Status](https://travis-ci.com/sng23/miniproject2.svg?branch=stats)](https://travis-ci.com/sng23/miniproject2)
 RNG | | | | [![Build Status](https://travis-ci.com/sng23/miniproject2.svg?branch=rng)](https://travis-ci.com/sng23/miniproject2)
 Sampling | | | | [![Build Status](https://travis-ci.com/sng23/miniproject2.svg?branch=sampling)](https://travis-ci.com/sng23/miniproject2)
 
