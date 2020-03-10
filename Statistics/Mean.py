@@ -4,8 +4,9 @@ from pprint import pprint
 
 
 def mean(data):
-    x = len(data)
+    values = len(data)
     total = 0
-    for num in data:
-        total = fn_addition(total, num)
-        return fn_division(total, x)
+
+    for i in data:
+        total = sum(data)
+        return fn_division(total, values)
