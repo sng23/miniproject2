@@ -47,7 +47,10 @@ We need to divide the tasks among the team members in a way that will minimize h
 * 3/9/20 JF assigned Stats to JF
 * 3/9/20 JF Moved Calculator.py to its own Calculator directory
 * 3/9/20 JF added. static methods for Addition, Subtraction, Division, Sqrt, multiplication, and square to it's own .py
-
-
- 
- 
+* 3/10/20 JF added mode formula to statistics 
+* 3/10/20 JF added mean formula to statistics 
+* 3/10/20 JF added median formula to statistics 
+* 3/10/20 JF added mean deviation formula to statistics 
+* 3/10/20 JF added mode test to test_statistics
+* 3/10/20 JF added median test to test_statistics
+* 3/10/20 JF added mean deviation test to test_statistics
