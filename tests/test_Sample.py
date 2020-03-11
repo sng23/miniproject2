@@ -14,8 +14,8 @@ class SampleTests(unittest.TestCase):
 
     def test_srs(self):
         n = 7382
-        test_data = self.sample.load_data(self.data_path)
-        samples = self.sample.srs(test_data, n)
+        self.sample.load_data(self.data_path)
+        samples = self.sample.srs(n)
         self.assertEqual(n, len(samples))
 
         samples_sorted = sorted(samples, key=lambda i: i['id'])
@@ -28,8 +28,8 @@ class SampleTests(unittest.TestCase):
     def test_srs_n_too_large(self):
         n = 7383
         try:
-            test_data = self.sample.load_data(self.data_path)
-            samples = self.sample.srs(test_data, n)
+            self.sample.load_data(self.data_path)
+            samples = self.sample.srs(n)
         except SampleRequestLargerThanDataset:
             pass
         else:

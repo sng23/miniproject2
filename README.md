@@ -47,5 +47,5 @@ We need to divide the tasks among the team members in a way that will minimize h
 * 3/9/20 SG Add check for zero-length datafile to CsvReader
 * 3/9/20 SG Import coronavirus patient data for South Korea from https://www.kaggle.com/kimjihoo/coronavirusdataset#patient.csv
 * 3/11/20 SG Separate data loader functionality into its own base class
- 
+* 3/11/20 SG Move static method out of Sample/srs class
  
