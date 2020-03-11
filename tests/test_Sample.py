@@ -12,11 +12,6 @@ class SampleTests(unittest.TestCase):
     def test_instantiate(self):
         self.assertIsInstance(self.sample, Sample)
 
-    def test_load_data(self):
-        test_data = self.sample.load_data(self.data_path)
-        verify_data = CsvReader(self.data_path).data
-        self.assertEqual(test_data, verify_data)
-
     def test_srs(self):
         n = 7382
         test_data = self.sample.load_data(self.data_path)

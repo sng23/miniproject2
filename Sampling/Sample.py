@@ -1,24 +1,16 @@
-import csv
 import random
-from CsvReader import CsvReader
 from typing import overload
+from Sampling.DataLoader import DataLoader
 
 
 class SampleRequestLargerThanDataset(Exception):
     pass
 
 
-class Sample:
-
-    test_data = []
+class Sample(DataLoader):
 
     def __init__(self):
         pass
-
-    def load_data(self, filepath):
-        test_data = CsvReader(filepath).data
-        self.test_data = test_data
-        return test_data
 
     @overload
     def srs(self, n):
