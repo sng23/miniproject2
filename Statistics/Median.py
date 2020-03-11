@@ -1,15 +1,13 @@
 
-
-#from Calculator.Addition import fn_addition
-#from Calculator.Division import fn_division
+from Statistics.Mean import mean
 
 
-#def median(data):
- #   data = []
-  #  data.sort()
-   # total = 0
-    #for num in data:
-     #   total = fn_addition(data, 1)
-      #  return fn_division(total, 2)
-
-#median formula (n+1)/2
+def median(data):
+    data.sort()
+    if len(data) % 2 != 0:
+        center = int((len(data) - 1) / 2)
+        return data[center]
+    elif len(data) % 2 == 0:
+        center1 = int(len(data) / 2)
+        center2 = int(len(data) / 2) - 1
+        return int(mean([data[center1], data[center2]]))

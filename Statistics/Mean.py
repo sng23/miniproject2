@@ -8,5 +8,7 @@ def mean(data):
     total = 0
 
     for i in data:
-        total = sum(data)
-        return fn_division(total, values)
+        total = fn_addition(total, i)
+    return fn_division(total, values)
+
+
