@@ -18,7 +18,7 @@ def srs(test_data, n):
     return samples
 
 
-class Sample(DataLoader):
+class SRS(DataLoader):
 
     def __init__(self):
         pass

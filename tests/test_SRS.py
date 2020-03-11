@@ -1,21 +1,21 @@
 import unittest
-from Sampling.Sample import Sample, SampleRequestLargerThanDataset
+from Sampling.SRS import SRS, SampleRequestLargerThanDataset
 from CsvReader import CsvReader
 
 
-class SampleTests(unittest.TestCase):
+class SRSTests(unittest.TestCase):
 
     def setUp(self):
-        self.sample = Sample()
+        self.srs = SRS()
         self.data_path = 'data/patient.csv'
 
     def test_instantiate(self):
-        self.assertIsInstance(self.sample, Sample)
+        self.assertIsInstance(self.srs, SRS)
 
     def test_srs(self):
         n = 7382
-        self.sample.load_data(self.data_path)
-        samples = self.sample.srs(n)
+        self.srs.load_data(self.data_path)
+        samples = self.srs.srs(n)
         self.assertEqual(n, len(samples))
 
         samples_sorted = sorted(samples, key=lambda i: i['id'])
@@ -28,8 +28,8 @@ class SampleTests(unittest.TestCase):
     def test_srs_n_too_large(self):
         n = 7383
         try:
-            self.sample.load_data(self.data_path)
-            samples = self.sample.srs(n)
+            self.srs.load_data(self.data_path)
+            samples = self.srs.srs(n)
         except SampleRequestLargerThanDataset:
             pass
         else:
