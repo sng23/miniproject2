@@ -56,3 +56,6 @@ We need to divide the tasks among the team members in a way that will minimize h
 * 3/10/20 JF added mean deviation test to test_statistics
 * 3/12/20 JF added Standard deviation formula to Statistics
 * 3/12/20 JF added Standard deviation test to test_statistics
+* 3/12/20 JF added Variance test to test_statistics
+* 3/12/20 JF added variance formula 
+* 3/12/20 JF added added variance to Statistics.py
