@@ -29,5 +29,8 @@ class MyTestCase(unittest.TestCase):
 
     def test_stdev(self):
         self.assertEqual(self.statistics.test_stdev(self.data), 1.291)
+
+    def test_var(self):
+        self.assertEqual(self.statistics.test_variance(self.data), 1.6666666666667)
     if __name__ == '__main__':
         unittest.main()
