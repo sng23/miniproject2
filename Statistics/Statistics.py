@@ -4,6 +4,7 @@ from Statistics.Mean import mean
 from Statistics.Median import median
 from Statistics.Mode import mode
 from Statistics.standard_Deviation import standard
+from Statistics.Variance import var
 from pprint import pprint
 
 
@@ -27,4 +28,8 @@ class Statistics(Calculator):
 
     def test_stdev(self, data):
         self.result = standard(data)
+        return self.result
+
+    def test_variance(self, data):
+        self.result = var(data)
         return self.result
