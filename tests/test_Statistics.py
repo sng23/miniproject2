@@ -26,5 +26,8 @@ class MyTestCase(unittest.TestCase):
 
     def test_mode(self):
         self.assertEqual(self.statistics.test_mode(self.data), 3)
+
+    def test_stdev(self):
+        self.assertEqual(self.statistics.test_stdev(self.data), 1.291)
     if __name__ == '__main__':
         unittest.main()

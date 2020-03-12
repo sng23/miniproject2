@@ -3,6 +3,7 @@ from Statistics.mean_Absolute_Deviation import mad
 from Statistics.Mean import mean
 from Statistics.Median import median
 from Statistics.Mode import mode
+from Statistics.standard_Deviation import standard
 from pprint import pprint
 
 
@@ -24,3 +25,6 @@ class Statistics(Calculator):
         self.result = mode(data)
         return self.result
 
+    def test_stdev(self, data):
+        self.result = standard(data)
+        return self.result
