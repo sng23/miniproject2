@@ -58,4 +58,10 @@ We need to divide the tasks among the team members in a way that will minimize h
 * 3/12/20 JF added Standard deviation test to test_statistics
 * 3/12/20 JF added Variance test to test_statistics
 * 3/12/20 JF added variance formula 
-* 3/12/20 JF added added variance to Statistics.py
+* 3/12/20 JF added  variance to Statistics.py
+* 3/12/20 JF added zscore test to test_statistics
+* 3/12/20 JF added zscore function
+* 3/12/20 JF added zscore to Statistics.py
+* 3/12/20 JF added skewness test to test_statistics
+* 3/12/20 JF added skewness function
+* 3/12/20 JF added skewness to Statistics.py
