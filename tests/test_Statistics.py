@@ -10,6 +10,7 @@ class MyTestCase(unittest.TestCase):
         # self.testData = randint(0, 10, 20)
         self.statistics = Statistics()
         self.data = [2, 1, 3, 3, 4, 5]
+        self.raw_score = 25
 
     def test_instantiate_calculator(self):
         self.assertIsInstance(self.statistics, Statistics)
@@ -32,5 +33,11 @@ class MyTestCase(unittest.TestCase):
 
     def test_var(self):
         self.assertEqual(self.statistics.test_variance(self.data), 1.6666666666667)
+
+    def test_z(self):
+        self.assertEqual(self.statistics.test_z(self.data), 17.04105)
+
+    def test_skew(self):
+        self.assertEqual(self.statistics.test_skew(self.data), 0)
     if __name__ == '__main__':
         unittest.main()
