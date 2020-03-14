@@ -39,5 +39,8 @@ class MyTestCase(unittest.TestCase):
 
     def test_skew(self):
         self.assertEqual(self.statistics.test_skew(self.data), 0)
+
+    def test_quartiles(self):
+        self.assertEqual(self.statistics.test_quartiles(self.data), [2.25, 3, 3.75])
     if __name__ == '__main__':
         unittest.main()
