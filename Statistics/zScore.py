@@ -15,6 +15,3 @@ def z(data):
     d = fn_subtraction(x, c)
     return round(fn_division(d, b), 5)
 
-#def z(data):
- #   return stats.zscore(data)
-
