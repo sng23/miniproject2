@@ -38,8 +38,8 @@ class Statistics(Calculator):
         self.result = var(data)
         return self.result
 
-    def test_z(self, data):
-        self.result = z(data)
+    def test_z(self, data, x):
+        self.result = z(data, x)
         return self.result
 
     def test_skew(self, data):

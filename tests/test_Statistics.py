@@ -35,7 +35,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.statistics.test_variance(self.data), 1.6666666666667)
 
     def test_z(self):
-        self.assertEqual(self.statistics.test_z(self.data), 17.04105)
+        self.assertEqual(self.statistics.test_z(self.data, 25), 17.04105)
 
     def test_skew(self):
         self.assertEqual(self.statistics.test_skew(self.data), 0)
