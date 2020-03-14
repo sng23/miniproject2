@@ -8,6 +8,7 @@ from Statistics.Variance import var
 from Statistics.Skewness import skewness
 from Statistics.zScore import z
 from Statistics.Quartiles import quartiles
+from Statistics.population_Correlation import p_correlation
 from pprint import pprint
 
 
@@ -47,4 +48,8 @@ class Statistics(Calculator):
 
     def test_quartiles(self, data):
         self.result = quartiles(data)
+        return self.result
+
+    def test_p_correlation(self, data, data2):
+        self.result = p_correlation(data, data2)
         return self.result
