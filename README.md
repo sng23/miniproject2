@@ -65,3 +65,6 @@ We need to divide the tasks among the team members in a way that will minimize h
 * 3/12/20 JF added skewness test to test_statistics
 * 3/12/20 JF added skewness function
 * 3/12/20 JF added skewness to Statistics.py
+* 3/13/20 JF added Quartiles test to test_statistics
+* 3/13/20 JF added Quartiles function
+* 3/13/20 JF added Quartiles to Statistics.py
