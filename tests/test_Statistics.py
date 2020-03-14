@@ -10,7 +10,7 @@ class MyTestCase(unittest.TestCase):
         # self.testData = randint(0, 10, 20)
         self.statistics = Statistics()
         self.data = [2, 1, 3, 3, 4, 5]
-        self.raw_score = 25
+        self.data2 = [1, 5, 6, 9, 11, 3]
 
     def test_instantiate_calculator(self):
         self.assertIsInstance(self.statistics, Statistics)
@@ -42,5 +42,8 @@ class MyTestCase(unittest.TestCase):
 
     def test_quartiles(self):
         self.assertEqual(self.statistics.test_quartiles(self.data), [2.25, 3, 3.75])
+
+    def test_pCon(self):
+        self.assertEqual(self.statistics.test_p_correlation(self.data, self.data2), 0.2287)
     if __name__ == '__main__':
         unittest.main()
