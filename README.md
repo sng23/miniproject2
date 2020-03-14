@@ -77,3 +77,4 @@ We need to divide the tasks among the team members in a way that will minimize h
 * 3/13/20 JF added population correlation  function
 * 3/13/20 JF added population correlation  to Statistics.py
 * 3/14/20 SG Systematic sampling
+* 3/14/20 SG Checks for div by 0 and mod 0
