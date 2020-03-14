@@ -49,3 +49,4 @@ We need to divide the tasks among the team members in a way that will minimize h
 * 3/11/20 SG Separate data loader functionality into its own base class
 * 3/11/20 SG Move static method out of Sample/srs class
 * 3/11/20 SG Rename Sample class to SRS
+* 3/14/20 SG Systematic sampling
