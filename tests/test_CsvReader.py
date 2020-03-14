@@ -1,6 +1,6 @@
 import unittest
-from Calculator import Calculator
 from CsvReader import CsvReader, ZeroDataException
+from Calculator.Calculator import Calculator
 
 
 class CsvReaderTests(unittest.TestCase):
