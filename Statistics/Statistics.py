@@ -7,6 +7,7 @@ from Statistics.standard_Deviation import standard
 from Statistics.Variance import var
 from Statistics.Skewness import skewness
 from Statistics.zScore import z
+from Statistics.Quartiles import quartiles
 from pprint import pprint
 
 
@@ -42,4 +43,8 @@ class Statistics(Calculator):
 
     def test_skew(self, data):
         self.result = skewness(data)
+        return self.result
+
+    def test_quartiles(self, data):
+        self.result = quartiles(data)
         return self.result
