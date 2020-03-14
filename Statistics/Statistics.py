@@ -9,6 +9,7 @@ from Statistics.Skewness import skewness
 from Statistics.zScore import z
 from Statistics.Quartiles import quartiles
 from Statistics.population_Correlation import p_correlation
+from Statistics.MarginOfError import margin_of_error
 from pprint import pprint
 
 
@@ -52,4 +53,8 @@ class Statistics(Calculator):
 
     def test_p_correlation(self, data, data2):
         self.result = p_correlation(data, data2)
+        return self.result
+
+    def margin_of_error(self, data, x):
+        self.result = margin_of_error(data, x)
         return self.result

@@ -37,7 +37,7 @@ We need to divide the tasks among the team members in a way that will minimize h
 * Prof. would probably like to see a small discussion in the comments, at least for dev->master
  
 ## Low Level Operations Dependencies Example
-![](images/program%20operations%20diagram.png)
+![](images/Program%20Operations%20Diagram.png)
 [link to draw.io program diagram](https://drive.google.com/file/d/1-kmcID1HtiE-PwfVW2D8M-OZXasv8nbQ/view?usp=sharing)
 
 ## Changelog
@@ -71,3 +71,6 @@ We need to divide the tasks among the team members in a way that will minimize h
 * 3/13/20 JF added population correlation test to test_statistics
 * 3/13/20 JF added population correlation  function
 * 3/13/20 JF added population correlation  to Statistics.py
+* 3/14/20 SG added Margin of error test to test_statistics
+* 3/14/20 SG added Margin of error function
+* 3/14/20 SG added Margin of error to Statistics.py

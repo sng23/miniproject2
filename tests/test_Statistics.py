@@ -45,5 +45,9 @@ class MyTestCase(unittest.TestCase):
 
     def test_pCon(self):
         self.assertEqual(self.statistics.test_p_correlation(self.data, self.data2), 0.2287)
+
+    def test_margin_of_error(self):
+        self.assertEqual(self.statistics.margin_of_error(self.data, 0.95), 0.837)
+
     if __name__ == '__main__':
         unittest.main()
