@@ -2,7 +2,8 @@ import unittest
 import random
 from random import seed
 from random import randint
-from RandomNumber.Random import noSeed, noSeed_Decimal, seed_Int, seed_Decimal, seed_Numbers, seed_Numbers_Decimal
+from RandomNumber.Random import noSeed, noSeed_Decimal, seed_Int, seed_Decimal, seed_Numbers, seed_Numbers_Decimal, \
+    number_list
 from RandomNumber import Random
 from pprint import pprint
 
@@ -41,6 +42,10 @@ class MyTestCase(unittest.TestCase):
     def test_seed_Number_Decimal(self):
         self.assertIs(seed_Numbers_Decimal(), None)
         print(seed_Numbers_Decimal())
+
+    def test_Number_list(self):
+        self.assertGreaterEqual(number_list(), 0)
+        print(number_list())
 
 
 if __name__ == '__main__':
