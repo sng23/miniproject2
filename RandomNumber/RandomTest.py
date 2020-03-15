@@ -19,6 +19,7 @@ class MyTestCase(unittest.TestCase):
         pprint("number without seed in Integer")
         pprint(noSeed())
 
+
     def test_noSeed_Decimal(self):
         self.assertGreaterEqual(noSeed_Decimal(), 0)
         self.assertLessEqual(noSeed_Decimal(), 100)
