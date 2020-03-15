@@ -6,7 +6,7 @@ from Statistics.Mode import mode
 from Statistics.standard_Deviation import standard
 from Statistics.Variance import var
 from Statistics.Skewness import skewness
-from Statistics.zScore import z
+from Statistics.zScore import z, z_given_p
 from Statistics.Quartiles import quartiles
 from Statistics.population_Correlation import p_correlation
 from Statistics.MarginOfError import margin_of_error
@@ -44,6 +44,10 @@ class Statistics(Calculator):
         self.result = z(data, x)
         return self.result
 
+    def z_given_p(self, p):
+        self.result = z_given_p(p)
+        return self.result
+
     def test_skew(self, data):
         self.result = skewness(data)
         return self.result
@@ -56,8 +60,8 @@ class Statistics(Calculator):
         self.result = p_correlation(data, data2)
         return self.result
 
-    def margin_of_error(self, data, x):
-        self.result = margin_of_error(data, x)
+    def margin_of_error(self, data, p):
+        self.result = margin_of_error(data, p)
         return self.result
 
     def confidence_interval_sample(self, data, x):

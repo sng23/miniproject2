@@ -73,3 +73,4 @@ We need to divide the tasks among the team members in a way that will minimize h
 * 3/13/20 JF added population correlation  to Statistics.py
 * 3/14/20 SG Margin of error
 * 3/14/20 SG Confidence interval for sample
+* 3/15/20 SG Function to determine z given probability
