@@ -10,6 +10,7 @@ from Statistics.zScore import z
 from Statistics.Quartiles import quartiles
 from Statistics.population_Correlation import p_correlation
 from Statistics.MarginOfError import margin_of_error
+from Statistics.ConfidenceIntervalSample import confidence_interval_sample
 from pprint import pprint
 
 
@@ -57,4 +58,8 @@ class Statistics(Calculator):
 
     def margin_of_error(self, data, x):
         self.result = margin_of_error(data, x)
+        return self.result
+
+    def confidence_interval_sample(self, data, x):
+        self.result = confidence_interval_sample(data, x)
         return self.result

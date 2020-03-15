@@ -49,5 +49,8 @@ class MyTestCase(unittest.TestCase):
     def test_margin_of_error(self):
         self.assertEqual(self.statistics.margin_of_error(self.data, 0.95), 0.837)
 
+    def test_confidence_interval_sample(self):
+        self.assertEqual(self.statistics.confidence_interval_sample(self.data, 0.95), (2.083, 3.917))
+
     if __name__ == '__main__':
         unittest.main()
