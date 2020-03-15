@@ -4,10 +4,10 @@ from Statistics.standard_Deviation import standard
 
 
 # me = z (s/ sqrt(n))
-def margin_of_error(data, x):
+def margin_of_error(data, x, ddof=0):
     calc = Calculator.Calculator()
     z_score = abs(z(data, x))
-    std_dev = standard(data)
+    s = standard(data, ddof)
     n = len(data)
-    result = calc.multiply(z_score, calc.divide(std_dev, calc.squareroot(n)))
+    result = calc.multiply(z_score, calc.divide(s, calc.squareroot(n)))
     return round(result, 3)
