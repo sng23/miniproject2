@@ -22,3 +22,11 @@ def seed_Int():
 def seed_Decimal():
     seed(12)
     return random.uniform(0, 10)
+
+
+# Generate a list of N random numbers with a seed
+def seed_Numbers():
+    seed(3)
+    for _ in range(10):
+        value = randint(0, 10)
+        print(value)

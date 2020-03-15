@@ -1,7 +1,8 @@
 import unittest
 import random
+from random import seed
 from random import randint
-from RandomNumber.Random import noSeed, noSeed_Decimal, seed_Int, seed_Decimal
+from RandomNumber.Random import noSeed, noSeed_Decimal, seed_Int, seed_Decimal, seed_Numbers
 from RandomNumber import Random
 from pprint import pprint
 
@@ -32,6 +33,10 @@ class MyTestCase(unittest.TestCase):
         self.assertGreaterEqual(seed_Decimal(), 0)
         self.assertLessEqual(seed_Decimal(), 100)
         print(seed_Decimal())
+
+    def test_seed_Number_Int(self):
+        self.assertEqual(seed_Numbers(), None)
+        print(seed_Numbers())
 
 
 if __name__ == '__main__':
