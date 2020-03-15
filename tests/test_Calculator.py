@@ -32,6 +32,12 @@ class MyTestCase(unittest.TestCase):
         result = 3
         self.assertEqual(self.calculator.divide(15, 5), result)
         self.assertEqual(self.calculator.result, result)
+        try:
+            self.calculator.divide(3, 0)
+        except ZeroDivisionError:
+            pass
+        else:
+            self.fail("Did not catch ZeroDivisionError")
 
     def test_square(self):
         result = 9

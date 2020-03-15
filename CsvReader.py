@@ -1,6 +1,10 @@
 import csv
 
 
+class ZeroDataException(Exception):
+    pass
+
+
 class CsvReader:
     data = []
 
@@ -10,4 +14,6 @@ class CsvReader:
             csv_data = csv.DictReader(text_data, delimiter=',')
             for row in csv_data:
                 self.data.append(row)
+            if len(self.data) == 0:
+                raise ZeroDataException("Datafile is zero length")
         pass

@@ -1,6 +1,5 @@
 import unittest
-from Calculator import Calculator
-from CsvReader import CsvReader
+from CsvReader import CsvReader, ZeroDataException
 from Calculator.Calculator import Calculator
 
 
@@ -13,6 +12,14 @@ class CsvReaderTests(unittest.TestCase):
         self.csv_reader = CsvReader('data/Unit Test CsvReader.txt')
         self.assertIsInstance(self.csv_reader, CsvReader)
         self.assertEqual(self.csv_reader.data.__len__(), 2)
+
+    def test_zerolength(self):
+        try:
+            test_data = CsvReader('data/Unit Test Zero Length Datafile.csv').data
+        except ZeroDataException:
+            pass
+        else:
+            self.fail("Did not catch ZeroDataException.")
 
     def test_add(self):
         test_data = CsvReader('data/Unit Test Addition.csv').data

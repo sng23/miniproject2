@@ -43,11 +43,14 @@ We need to divide the tasks among the team members in a way that will minimize h
 ## Changelog
 * 3/2/20 SG Rough outline for README.md
 * 3/8/20 SG Added more to README.md
+* 3/8/20 SG Branch calculator off dev, upload calculator project
 * 3/8/20 SG Upload calculator code, set up travis, spin up feature branches
 * 3/8/20 SG Branch calculator off dev, upload calculator project
 * 3/9/20 JF assigned Stats to JF
 * 3/9/20 JF Moved Calculator.py to its own Calculator directory
 * 3/9/20 JF added. static methods for Addition, Subtraction, Division, Sqrt, multiplication, and square to it's own .py
+* 3/9/20 SG Add check for zero-length datafile to CsvReader
+* 3/9/20 SG Import coronavirus patient data for South Korea from https://www.kaggle.com/kimjihoo/coronavirusdataset#patient.csv
 * 3/10/20 JF added mode formula to statistics 
 * 3/10/20 JF added mean formula to statistics 
 * 3/10/20 JF added median formula to statistics 
@@ -55,6 +58,9 @@ We need to divide the tasks among the team members in a way that will minimize h
 * 3/10/20 JF added mode test to test_statistics
 * 3/10/20 JF added median test to test_statistics
 * 3/10/20 JF added mean deviation test to test_statistics
+* 3/11/20 SG Separate data loader functionality into its own base class
+* 3/11/20 SG Move static method out of Sample/srs class
+* 3/11/20 SG Rename Sample class to SRS
 * 3/12/20 JF added Standard deviation formula to Statistics
 * 3/12/20 JF added Standard deviation test to test_statistics
 * 3/12/20 JF added Variance test to test_statistics
@@ -74,6 +80,8 @@ We need to divide the tasks among the team members in a way that will minimize h
 * 3/13/20 JF added population correlation  to Statistics.py
 * 3/14/20 SG Margin of error
 * 3/14/20 SG Confidence interval for sample
+* 3/14/20 SG Systematic sampling
+* 3/14/20 SG Checks for div by 0 and mod 0
 * 3/15/2020 AK Generate a random number without a seed between a range of two numbers - Both Integer and Decimal
 * 3/15/2020 AK Generate a random number with a seed between a range of two numbers - Both Integer and Decimal
 * 3/15/2020 AK Generate a list of N random numbers with a seed and between a range of numbers - Both Integer and Decimal
