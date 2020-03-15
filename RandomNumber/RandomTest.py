@@ -3,7 +3,7 @@ import random
 from random import seed
 from random import randint
 from RandomNumber.Random import noSeed, noSeed_Decimal, seed_Int, seed_Decimal, seed_Numbers, seed_Numbers_Decimal, \
-    number_list, seed_number_list, seedNo_number_list
+    number_list, seed_number_list, seedNo_number_list, list_with_seed
 
 from RandomNumber import Random
 from pprint import pprint
@@ -55,6 +55,10 @@ class MyTestCase(unittest.TestCase):
     def test_NOSeed_list(self):
         self.assertIs(seedNo_number_list(), seedNo_number_list())
         print(seedNo_number_list())
+
+    def test_numberList(self):
+        self.assertIs(list_with_seed(), list_with_seed())
+        print(list_with_seed())
 
 
 if __name__ == '__main__':
