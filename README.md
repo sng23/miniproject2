@@ -8,7 +8,7 @@ Task Todo | In Progress | Review | Done | Build Status
 Outline / Dependency graph | SG | |
 Modules, Plan, Branching, Final PR | SG | |
 Stats |JF | | | [![Build Status](https://travis-ci.com/sng23/miniproject2.svg?branch=stats)](https://travis-ci.com/sng23/miniproject2)
-RNG | | | | [![Build Status](https://travis-ci.com/sng23/miniproject2.svg?branch=rng)](https://travis-ci.com/sng23/miniproject2)
+RNG | |AK | | [![Build Status](https://travis-ci.com/sng23/miniproject2.svg?branch=rng)](https://travis-ci.com/sng23/miniproject2)
 Sampling | | | | [![Build Status](https://travis-ci.com/sng23/miniproject2.svg?branch=sampling)](https://travis-ci.com/sng23/miniproject2)
 
 
@@ -71,3 +71,10 @@ We need to divide the tasks among the team members in a way that will minimize h
 * 3/13/20 JF added population correlation test to test_statistics
 * 3/13/20 JF added population correlation  function
 * 3/13/20 JF added population correlation  to Statistics.py
+* 3/15/2020 AK Generate a random number without a seed between a range of two numbers - Both Integer and Decimal
+* 3/15/2020 AK Generate a random number with a seed between a range of two numbers - Both Integer and Decimal
+* 3/15/2020 AK Generate a list of N random numbers with a seed and between a range of numbers - Both Integer and Decimal
+* 3/15/2020 AK Select a random item from a list
+* 3/15/2020 AK Set a seed and randomly.select the same value from a list
+* 3/15/2020 AK Select N number of items from a list without a seed
+* 3/15/2020 AK Select N number of items from a list with a seed
