@@ -3,7 +3,8 @@ import random
 from random import seed
 from random import randint
 from RandomNumber.Random import noSeed, noSeed_Decimal, seed_Int, seed_Decimal, seed_Numbers, seed_Numbers_Decimal, \
-    number_list
+    number_list, seed_number_list, seedNo_number_list
+
 from RandomNumber import Random
 from pprint import pprint
 
@@ -36,16 +37,24 @@ class MyTestCase(unittest.TestCase):
         print(seed_Decimal())
 
     def test_seed_Number_Int(self):
-        self.assertIs(seed_Numbers(), None)
+        self.assertIs(seed_Numbers(), seed_Numbers())
         print(seed_Numbers())
 
     def test_seed_Number_Decimal(self):
-        self.assertIs(seed_Numbers_Decimal(), None)
+        self.assertIs(seed_Numbers_Decimal(), seed_Numbers_Decimal())
         print(seed_Numbers_Decimal())
 
     def test_Number_list(self):
         self.assertGreaterEqual(number_list(), 0)
         print(number_list())
+
+    def test_seed_list(self):
+        self.assertIs(seed_number_list(), seed_number_list())
+        print(seed_number_list())
+
+    def test_NOSeed_list(self):
+        self.assertIs(seedNo_number_list(), seedNo_number_list())
+        print(seedNo_number_list())
 
 
 if __name__ == '__main__':
