@@ -11,6 +11,7 @@ from Statistics.Quartiles import quartiles
 from Statistics.population_Correlation import p_correlation
 from Statistics.MarginOfError import margin_of_error
 from Statistics.ConfidenceIntervalSample import confidence_interval_sample
+from Statistics.sample_Correlation import sample
 from pprint import pprint
 
 
@@ -66,4 +67,8 @@ class Statistics(Calculator):
 
     def confidence_interval_sample(self, data, x):
         self.result = confidence_interval_sample(data, x)
+        return self.result
+
+    def test_sample(self, data, data2):
+        self.result = sample(data, data2)
         return self.result

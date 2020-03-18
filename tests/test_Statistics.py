@@ -1,19 +1,28 @@
 import unittest
 from Statistics.Statistics import Statistics
-
+import random
+from RandomNumber.Random import seed_number_list
+from RandomNumber.Random import list_with_seed
+import RandomNumber.Random
 from pprint import pprint
 
 
 class MyTestCase(unittest.TestCase):
     def setUp(self):
-        # seed(5)
-        # self.testData = randint(0, 10, 20)
         self.statistics = Statistics()
         self.data = [2, 1, 3, 3, 4, 5]
         self.data2 = [1, 5, 6, 9, 11, 3]
+        random.seed(3)
+        self.sample1 = random.sample(range(1, 20), 6)
+
+
 
     def test_instantiate_calculator(self):
         self.assertIsInstance(self.statistics, Statistics)
+
+    def test_sample_test(self):
+        self.assertEqual(self.statistics.test_sample(self.data, self.sample1), -0.2697)
+
 
     def test_mean(self):
 
