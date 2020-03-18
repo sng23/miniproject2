@@ -91,4 +91,5 @@ We need to divide the tasks among the team members in a way that will minimize h
 * 3/15/2020 AK Select N number of items from a list with a seed
 * 3/15/20 SG Function to determine z given probability
 * 3/15/20 SG Cochran small and large
+* 3/18/20 SG Fix for missing confidence P value lookups to get z
 * 3/21/20 SG Rename Cochrane module to SampleSize

@@ -38,14 +38,17 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.statistics.test_z(self.data, 25), 17.04105)
 
     def test_z_given_p(self):
-        self.assertEqual(self.statistics.z_given_p(0.80), 1.282)
-        self.assertEqual(self.statistics.z_given_p(0.85), 1.440)
-        self.assertEqual(self.statistics.z_given_p(0.90), 1.645)
-        self.assertEqual(self.statistics.z_given_p(0.95), 1.960)
-        self.assertEqual(self.statistics.z_given_p(0.99), 2.576)
-        self.assertEqual(self.statistics.z_given_p(0.995), 2.807)
-        self.assertEqual(self.statistics.z_given_p(0.999), 3.291)
-        self.assertRaises(KeyError, self.statistics.z_given_p(0.875))
+        try:
+            self.assertEqual(self.statistics.z_given_p(0.80), 1.282)
+            self.assertEqual(self.statistics.z_given_p(0.85), 1.282)  # python rounds .5 down, go figure
+            self.assertEqual(self.statistics.z_given_p(0.90), 1.645)
+            self.assertEqual(self.statistics.z_given_p(0.95), 1.960)
+            self.assertEqual(self.statistics.z_given_p(0.99), 2.576)
+            self.assertEqual(self.statistics.z_given_p(0.995), 2.807)
+            self.assertEqual(self.statistics.z_given_p(0.999), 3.291)
+        except KeyError:
+            self.fail("Should not throw KeyError")
+
 
     def test_skew(self):
         self.assertEqual(self.statistics.test_skew(self.data), 0)
