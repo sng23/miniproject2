@@ -19,7 +19,7 @@ def cochran_large(proportion, me, confidence):
 
 # https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/find-sample-size/
 # https://www.tarleton.edu/academicassessment/documents/Samplesize.pdf
-class Cochran(DataLoader):
+class SampleSize(DataLoader):
 
     def __init__(self):
         self.calc = Calculator()
