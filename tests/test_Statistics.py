@@ -1,10 +1,6 @@
 import unittest
 from Statistics.Statistics import Statistics
 import random
-from RandomNumber.Random import seed_number_list
-from RandomNumber.Random import list_with_seed
-import RandomNumber.Random
-from pprint import pprint
 
 
 class MyTestCase(unittest.TestCase):
@@ -14,15 +10,14 @@ class MyTestCase(unittest.TestCase):
         self.data2 = [1, 5, 6, 9, 11, 3]
         random.seed(3)
         self.sample1 = random.sample(range(1, 20), 6)
-
-
+        random.seed(4)
+        self.sample2 = random.sample(range(1, 20), 6)
 
     def test_instantiate_calculator(self):
         self.assertIsInstance(self.statistics, Statistics)
 
     def test_sample_test(self):
-        self.assertEqual(self.statistics.test_sample(self.data, self.sample1), -0.2697)
-
+        self.assertEqual(self.statistics.test_sample(self.sample1, self.sample2), 0.6331)
 
     def test_mean(self):
 
@@ -57,7 +52,6 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.statistics.z_given_p(0.999), 3.291)
         except KeyError:
             self.fail("Should not throw KeyError")
-
 
     def test_skew(self):
         self.assertEqual(self.statistics.test_skew(self.data), 0)

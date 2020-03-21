@@ -12,7 +12,6 @@ from Statistics.population_Correlation import p_correlation
 from Statistics.MarginOfError import margin_of_error
 from Statistics.ConfidenceIntervalSample import confidence_interval_sample
 from Statistics.sample_Correlation import sample
-from pprint import pprint
 
 
 class Statistics(Calculator):
