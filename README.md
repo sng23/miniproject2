@@ -94,3 +94,5 @@ We need to divide the tasks among the team members in a way that will minimize h
 * 3/18/20 JF added sample correlation test to test_statistics
 * 3/18/20 JF added sample correlation  function
 * 3/18/20 JF added sample correlation  to Statistics.py
+* 3/22/20 SG Rename method, changed implementation to call scipy
+ 

@@ -1,6 +1,7 @@
 import unittest
 from Statistics.Statistics import Statistics
 import random
+from Statistics.zScore import POutOfRangeException
 
 
 class MyTestCase(unittest.TestCase):
@@ -43,16 +44,15 @@ class MyTestCase(unittest.TestCase):
 
     def test_z_given_p(self):
         try:
-            self.assertEqual(self.statistics.z_given_p(0.80), 1.282)
-            self.assertEqual(self.statistics.z_given_p(0.85), 1.282)  # python rounds .5 down, go figure
             self.assertEqual(self.statistics.z_given_p(0.90), 1.645)
             self.assertEqual(self.statistics.z_given_p(0.95), 1.960)
             self.assertEqual(self.statistics.z_given_p(0.99), 2.576)
             self.assertEqual(self.statistics.z_given_p(0.995), 2.807)
             self.assertEqual(self.statistics.z_given_p(0.999), 3.291)
+            self.assertRaises(POutOfRangeException, self.statistics.z_given_p, 0.5)
         except KeyError:
             self.fail("Should not throw KeyError")
-
+			
     def test_skew(self):
         self.assertEqual(self.statistics.test_skew(self.data), 0)
 

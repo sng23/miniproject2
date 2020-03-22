@@ -2,7 +2,7 @@ from Statistics.Mean import mean
 from Calculator.Subtraction import fn_subtraction
 from Statistics.standard_Deviation import standard
 from Calculator.Division import fn_division
-
+import scipy.stats as stats
 
 class POutOfRangeException(Exception):
     pass
@@ -17,31 +17,10 @@ def z(data, x):
     return round(fn_division(d, b), 5)
 
 
-# open form, return z given the normal distribution and confidence p
-def z_given_p(p):
-    if not 0.0 <= p <= 1.0:
+# open form, return z given the normal distribution and confidence/2 p
+def z_given_confidence(p):
+    if not 0.9 <= p <= 0.999:
         raise POutOfRangeException
 
-    switch = {
-        0.05: -1.645,
-        0.1: 0.125,
-        0.2: 0.26,
-        0.3: 0.385,
-        0.4: 0.525,
-        0.5: 0.675,
-        0.6: 0.84,
-        0.7: 1.02,
-        0.8: 1.282,
-        0.9: 1.645,
-        0.95: 1.960,
-        0.99: 2.576,
-        0.995: 2.807,
-        0.999: 3.291
-    }
-
-    try:
-        z_score = switch[p]
-    except KeyError:
-        z_score = switch.get(round(p, 1))
-
+    z_score = round(stats.norm.ppf(1-(1-p)/2), 3)
     return z_score
