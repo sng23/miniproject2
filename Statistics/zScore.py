@@ -13,8 +13,9 @@ def z(data, x):
     d = fn_subtraction(x, c)
     return round(fn_division(d, b), 5)
 
+
 # open form, return z given the normal distribution and confidence interval
 def z_given_confidence(p):
     z_score = round(stats.norm.ppf(1-(1-p)/2), 3)
     return z_score
-	
+
