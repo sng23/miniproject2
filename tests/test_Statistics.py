@@ -1,19 +1,23 @@
 import unittest
 from Statistics.Statistics import Statistics
-
-from pprint import pprint
+import random
 
 
 class MyTestCase(unittest.TestCase):
     def setUp(self):
-        # seed(5)
-        # self.testData = randint(0, 10, 20)
         self.statistics = Statistics()
         self.data = [2, 1, 3, 3, 4, 5]
         self.data2 = [1, 5, 6, 9, 11, 3]
+        random.seed(3)
+        self.sample1 = random.sample(range(1, 20), 6)
+        random.seed(4)
+        self.sample2 = random.sample(range(1, 20), 6)
 
     def test_instantiate_calculator(self):
         self.assertIsInstance(self.statistics, Statistics)
+
+    def test_sample_test(self):
+        self.assertEqual(self.statistics.test_sample(self.sample1, self.sample2), 0.6331)
 
     def test_mean(self):
 
@@ -39,17 +43,12 @@ class MyTestCase(unittest.TestCase):
 
     def test_z_given_p(self):
         try:
-            self.assertEqual(self.statistics.z_given_p(0.80), 1.282)
-            self.assertEqual(self.statistics.z_given_p(0.85), 1.282)  # python rounds .5 down, go figure
             self.assertEqual(self.statistics.z_given_p(0.90), 1.645)
             self.assertEqual(self.statistics.z_given_p(0.95), 1.960)
             self.assertEqual(self.statistics.z_given_p(0.99), 2.576)
             self.assertEqual(self.statistics.z_given_p(0.995), 2.807)
             self.assertEqual(self.statistics.z_given_p(0.999), 3.291)
-        except KeyError:
-            self.fail("Should not throw KeyError")
-
-
+			
     def test_skew(self):
         self.assertEqual(self.statistics.test_skew(self.data), 0)
 

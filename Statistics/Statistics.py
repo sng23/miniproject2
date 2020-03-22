@@ -6,12 +6,12 @@ from Statistics.Mode import mode
 from Statistics.standard_Deviation import standard
 from Statistics.Variance import var
 from Statistics.Skewness import skewness
-from Statistics.zScore import z, z_given_p
+from Statistics.zScore import z, z_given_confidence
 from Statistics.Quartiles import quartiles
 from Statistics.population_Correlation import p_correlation
 from Statistics.MarginOfError import margin_of_error
 from Statistics.ConfidenceIntervalSample import confidence_interval_sample
-from pprint import pprint
+from Statistics.sample_Correlation import sample
 
 
 class Statistics(Calculator):
@@ -44,8 +44,9 @@ class Statistics(Calculator):
         self.result = z(data, x)
         return self.result
 
+    # given the confidence interval, return the upper bound z score
     def z_given_p(self, p):
-        self.result = z_given_p(p)
+        self.result = z_given_confidence(p)
         return self.result
 
     def test_skew(self, data):
@@ -66,4 +67,8 @@ class Statistics(Calculator):
 
     def confidence_interval_sample(self, data, x):
         self.result = confidence_interval_sample(data, x)
+        return self.result
+
+    def test_sample(self, data, data2):
+        self.result = sample(data, data2)
         return self.result
