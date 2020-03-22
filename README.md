@@ -97,4 +97,4 @@ We need to divide the tasks among the team members in a way that will minimize h
 * 3/18/20 JF added sample correlation  to Statistics.py
 * 3/21/20 SG Rename Cochrane module to SampleSize
 * 3/22/20 SG Rename method, changed implementation to call scipy
- 
+* 3/22/20 SG Find sample sizes with and without sigma

@@ -10,7 +10,7 @@ def cochran_small(n_0, N):
 
 def cochran_large(proportion, me, confidence):
     calc = Calculator()
-    z = Statistics.z_given_p(confidence)
+    z = Statistics.z_given_confidence(confidence)
     z_2 = calc.square(z)
     e_2 = calc.square(me)
     n_0 = calc.divide(calc.multiply(calc.multiply(z_2, proportion), 1-proportion), e_2)
@@ -38,3 +38,17 @@ class SampleSize(DataLoader):
         else:
             return cochran_small(n_0, N)
 
+    def find_n_size_unknown_sigma(self, confidence_p, interval_width, n_pct_of_N ):
+        z = Statistics.z_given_confidence(confidence_p)
+        E = self.calc.divide(interval_width, 2)
+        p_hat = n_pct_of_N
+        q_hat = 1 - p_hat
+        pq = self.calc.multiply(p_hat, q_hat)
+        result = self.calc.multiply(self.calc.square(self.calc.divide(z, E)), pq)
+        return round(result, 0)
+
+    def find_n_size_given_sigma(self, confidence_p, sigma, me):
+        z = Statistics.z_given_confidence(confidence_p)
+        zsig = self.calc.multiply(z, sigma)
+        result = self.calc.square(self.calc.divide(zsig, me))
+        return round(result, 0)
