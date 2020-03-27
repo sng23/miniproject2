@@ -7,7 +7,7 @@ Task Todo | In Progress | Review | Done | Build Status
 --- | --- | --- | --- | ---
 Outline / Dependency graph | SG | |
 Modules, Plan, Branching, Final PR | SG | |
-Stats |JF | | | [![Build Status](https://travis-ci.com/sng23/miniproject2.svg?branch=stats)](https://travis-ci.com/sng23/miniproject2)
+Stats |JF |JF | | [![Build Status](https://travis-ci.com/sng23/miniproject2.svg?branch=stats)](https://travis-ci.com/sng23/miniproject2)
 RNG |AK | | | [![Build Status](https://travis-ci.com/sng23/miniproject2.svg?branch=rng)](https://travis-ci.com/sng23/miniproject2)
 Sampling | SG | | | [![Build Status](https://travis-ci.com/sng23/miniproject2.svg?branch=sampling)](https://travis-ci.com/sng23/miniproject2)
 
@@ -98,3 +98,4 @@ We need to divide the tasks among the team members in a way that will minimize h
 * 3/21/20 SG Rename Cochrane module to SampleSize
 * 3/22/20 SG Rename method, changed implementation to call scipy
 * 3/22/20 SG Find sample sizes with and without sigma
+* 3/27/20 JF added list of random numbers 
