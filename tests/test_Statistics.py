@@ -1,6 +1,7 @@
 import unittest
 from Statistics.Statistics import Statistics
 import random
+from RandomNumber.random_List_numbers import random_L0f_number
 
 
 class MyTestCase(unittest.TestCase):
@@ -8,19 +9,20 @@ class MyTestCase(unittest.TestCase):
         self.statistics = Statistics()
         self.data = [2, 1, 3, 3, 4, 5]
         self.data2 = [1, 5, 6, 9, 11, 3]
-        random.seed(3)
-        self.sample1 = random.sample(range(1, 20), 6)
-        random.seed(4)
-        self.sample2 = random.sample(range(1, 20), 6)
+        self.sample2 = random_L0f_number(6, 1, 20, 6)
+        self.sample1 = random_L0f_number(4, 1, 20, 6)
+        # random.seed(3)
+        # self.sample1 = random.sample(range(1, 20), 6)
+        # random.seed(4)
+        # self.sample2 = random.sample(range(1, 20), 6)
 
     def test_instantiate_calculator(self):
         self.assertIsInstance(self.statistics, Statistics)
 
     def test_sample_test(self):
-        self.assertEqual(self.statistics.test_sample(self.sample1, self.sample2), 0.6331)
+        self.assertEqual(self.statistics.test_sample(self.sample1, self.sample2), 0.8117)
 
     def test_mean(self):
-
         self.assertEqual(self.statistics.mean(self.data), 3)
 
     def test_mad(self):
