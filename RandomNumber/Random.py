@@ -1,5 +1,7 @@
 import random
 from random import randint, seed
+from pprint import pprint
+
 
 
 # Generates a number without seed in Integer
@@ -30,6 +32,7 @@ def seed_Numbers():
     for _ in range(10):
         value = randint(0, 10)
         print(value)
+        return value
 
 
 # Generate a list of N random numbers with a seed - Decimal
@@ -65,6 +68,8 @@ def seedNo_number_list():
 def list_with_seed():
     value = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
     seed(4)
-    for value in range(30):
+    for value in range(6):
         value = random.randint(11, 20)
-        print(value)
+        # print(value)
+        return value
+
