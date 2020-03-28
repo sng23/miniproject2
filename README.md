@@ -33,7 +33,7 @@ We need to divide the tasks among the team members in a way that will minimize h
 * One big final PR from dev to master, last day
  
 ## Low Level Operations Dependencies Example
-![](images/Program%20Operations%20Diagram.png)
+![](/images/program_operations_diagram.png)
 [link to draw.io program diagram](https://drive.google.com/file/d/1-kmcID1HtiE-PwfVW2D8M-OZXasv8nbQ/view?usp=sharing)
 
 ## Changelog
@@ -94,4 +94,5 @@ We need to divide the tasks among the team members in a way that will minimize h
 * 3/21/20 SG Rename Cochrane module to SampleSize
 * 3/22/20 SG Rename method, changed implementation to call scipy
 * 3/22/20 SG Find sample sizes with and without sigma
-* 3/27/20 JF added list of random numbers 
+* 3/27/20 JF added list of random numbers
+
