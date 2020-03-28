@@ -1,12 +1,7 @@
 import unittest
-import random
-from random import seed
-from random import randint
+import numpy as np
 from RandomNumber.Random import noSeed, noSeed_Decimal, seed_Int, seed_Decimal, seed_Numbers, seed_Numbers_Decimal, \
     number_list, seed_number_list, seedNo_number_list, list_with_seed
-
-
-from RandomNumber.random_List_numbers import random_L0f_number
 from pprint import pprint
 
 
@@ -54,7 +49,7 @@ class MyTestCase(unittest.TestCase):
         pprint(number_list())
 
     def test_seed_list(self):
-        self.assertIs(seed_number_list(), seed_number_list())
+        self.assertEqual(seed_number_list(), seed_number_list())
         pprint("seed and randomly.select the same value from a list")
         pprint(seed_number_list())
 
@@ -67,10 +62,6 @@ class MyTestCase(unittest.TestCase):
         self.assertIs(list_with_seed(), list_with_seed())
         pprint(" N number of items from a list with a seed")
         pprint(list_with_seed())
-
-    def Random_Lof(self):
-        self.sample = random_L0f_number(6, 1, 20, 1)
-
 
 
 if __name__ == '__main__':
