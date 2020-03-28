@@ -1,2 +1,5 @@
 def fn_division(a, b):
-    return float(a) / float(b)
+    if float(b) == 0:
+        raise ZeroDivisionError
+    else:
+        return float(a) / float(b)

@@ -1,6 +1,5 @@
 from Calculator.Addition import fn_addition
 from Calculator.Division import fn_division
-from pprint import pprint
 
 
 def mean(data):
