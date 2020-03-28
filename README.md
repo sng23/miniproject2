@@ -5,12 +5,10 @@
 ## Project Task List
 Task Todo | In Progress | Review | Done | Build Status
 --- | --- | --- | --- | ---
-Outline / Dependency graph | SG | |
-Modules, Plan, Branching, Final PR | SG | |
-Stats |JF | | | [![Build Status](https://travis-ci.com/sng23/miniproject2.svg?branch=stats)](https://travis-ci.com/sng23/miniproject2)
-RNG |AK | | | [![Build Status](https://travis-ci.com/sng23/miniproject2.svg?branch=rng)](https://travis-ci.com/sng23/miniproject2)
-Sampling | SG | | | [![Build Status](https://travis-ci.com/sng23/miniproject2.svg?branch=sampling)](https://travis-ci.com/sng23/miniproject2)
-
+Outline, Plan, Branches | SG | | SG
+Stats |JF | JF | JF | [![Build Status](https://travis-ci.com/sng23/miniproject2.svg?branch=stats)](https://travis-ci.com/sng23/miniproject2)
+RNG |AK | AK | AK | [![Build Status](https://travis-ci.com/sng23/miniproject2.svg?branch=rng)](https://travis-ci.com/sng23/miniproject2)
+Sampling | SG | SG | SG | [![Build Status](https://travis-ci.com/sng23/miniproject2.svg?branch=sampling)](https://travis-ci.com/sng23/miniproject2)
 
 ## Program modules
 * Stats functions        
@@ -21,9 +19,8 @@ Sampling | SG | | | [![Build Status](https://travis-ci.com/sng23/miniproject2.sv
 ## Recommended Plan of Attack
 We need to divide the tasks among the team members in a way that will minimize how much we trip over each other
 * Minimize potential for merge conflicts
-* One branch per 'module' or one branch per team member
+* One branch per 'module'
 * Dependencies need to be scaffolded first
-* Treat dev like you would treat master
 
 ## Branching Strategy
 * Recommend all branches come off dev and return to dev, master stays pristine
@@ -34,7 +31,6 @@ We need to divide the tasks among the team members in a way that will minimize h
 * The pull request is a fancy `git pull` with comments attached
 * Minor PRs from each module to dev, 3-4 days from completion
 * One big final PR from dev to master, last day
-* Prof. would probably like to see a small discussion in the comments, at least for dev->master
  
 ## Low Level Operations Dependencies Example
 ![](images/Program%20Operations%20Diagram.png)
