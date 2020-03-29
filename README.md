@@ -36,6 +36,9 @@ We need to divide the tasks among the team members in a way that will minimize h
 ![](/images/program_operations_diagram.png)
 [link to draw.io program diagram](https://drive.google.com/file/d/1-kmcID1HtiE-PwfVW2D8M-OZXasv8nbQ/view?usp=sharing)
 
+## Authors
+Arif Khan, Jeffrey Frelish, Scott Grodberg
+
 ## Changelog
 * 3/2/20 SG Rough outline for README.md
 * 3/8/20 SG Added more to README.md
