@@ -1,0 +1,11 @@
+id,sex,birth_year,country,region,disease,group,infection_reason,infection_order,infected_by,contact_number,confirmed_date,released_date,deceased_date,state
+1,female,1984,China,filtered at airport,,,visit to Wuhan,1,,45,2020-01-20,2020-02-06,,released
+2,male,1964,Korea,filtered at airport,,,visit to Wuhan,1,,75,2020-01-24,2020-02-05,,released
+3,male,1966,Korea,capital area,,,visit to Wuhan,1,,16,2020-01-26,2020-02-12,,released
+4,male,1964,Korea,capital area,,,visit to Wuhan,1,,95,2020-01-27,2020-02-09,,released
+5,male,1987,Korea,capital area,,,visit to Wuhan,1,,31,2020-01-30,2020-03-02,,released
+6,male,1964,Korea,capital area,,,contact with patient,2,3,17,2020-01-30,2020-02-19,,released
+7,male,1991,Korea,capital area,,,visit to Wuhan,1,,9,2020-01-30,2020-02-15,,released
+8,female,1957,Korea,Jeollabuk-do,,,visit to Wuhan,1,,113,2020-01-31,2020-02-12,,released
+9,female,1992,Korea,capital area,,,contact with patient,2,5,2,2020-01-31,2020-02-24,,released
+10,female,1966,Korea,capital area,,,contact with patient,3,6,43,2020-01-31,2020-02-19,,released
